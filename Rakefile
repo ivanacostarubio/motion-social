@@ -13,4 +13,6 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'motion-social'
+
+  app.frameworks += %w(Social)
 end
