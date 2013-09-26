@@ -19,15 +19,23 @@ And then execute:
 
 ## Usage:
 
-In your UIViewController
+    class MyAwesomeViewController < UIViewController
 
-    include MotionSocial::Sharing
+      include MotionSocial::Sharing
 
-Define the following methods:
+      def sharing_message
+        "I am using Motion-Social"
+      end
 
-    def sharing_message
-    def sharing_url
-    def controller
+      def sharing_url
+        "http://www.rubymotion.com"
+      end
+
+      def controller
+        self # This is so that we can present the dialogs. 
+      end
+
+    end
 
 When you want to display the sharing dialogs just use: 
 
