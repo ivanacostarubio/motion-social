@@ -14,6 +14,10 @@ module MotionSocial
     # postToTwitter(sender)
     # postToFacebook(sender)
     #
+    # or display a dialog with Facebook and Twitter as options:
+    #
+    # display_share_dialog
+    #
     def postToTwitter(sender)
       if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)
         tweetSheet = SLComposeViewController.composeViewControllerForServiceType(SLServiceTypeTwitter)

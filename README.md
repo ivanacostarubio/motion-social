@@ -1,7 +1,5 @@
 # motion-social
 
-TODO: Write a gem description
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -12,18 +10,24 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
 
-    $ gem install motion-social
+## Usage:
 
-## Usage
+In your UIViewController
 
-TODO: Write usage instructions here
+    include MotionSocial::Sharing
 
-## Contributing
+Define the following methods:
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    def sharing_message
+    def sharing_url
+    def controller
+
+When you want to display the sharing dialogs just use: 
+
+    postToTwitter(sender)
+    postToFacebook(sender)
+
+or display a dialog with Facebook and Twitter as options:
+
+    display_share_dialog
