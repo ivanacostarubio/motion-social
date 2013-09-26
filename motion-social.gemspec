@@ -1,13 +1,13 @@
 # -*- encoding: utf-8 -*-
-VERSION = "1.0"
+VERSION = "0.1"
 
 Gem::Specification.new do |spec|
   spec.name          = "motion-social"
   spec.version       = VERSION
   spec.authors       = ["Ivan Acosta-Rubio"]
   spec.email         = ["ivan@bakedweb.net"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{RubyMotion Wrapper around the Social Framework}
+  spec.summary       = %q{RubyMotion Wrapper around the Social Framework}
   spec.homepage      = ""
   spec.license       = ""
 
