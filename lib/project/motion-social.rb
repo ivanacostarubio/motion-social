@@ -39,7 +39,10 @@ module MotionSocial
     end
 
     def error_message_for(service)
-      App.alert("You don't have #{service} configured. Please go to your phone's settings and configure it.")
+      message = UIAlertView.alloc.initWithTitle("Something is wrong",
+        message:"You don't have #{service} configured. Please go to your phone's settings and configure it.",
+        delegate:nil, cancelButtonTitle:"OK", otherButtonTitles:nil)
+      message.show
     end
   end
 end
