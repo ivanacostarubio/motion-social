@@ -1,4 +1,4 @@
-module MontionSocial
+module MotionSocial
   module Sharing
     # Usage:
     # include MotionSocial::Sharing
@@ -8,6 +8,11 @@ module MontionSocial
     # def sharing_message
     # def sharing_url
     # def controller
+    #
+    # When you want to display the sharing dialogs just use: 
+    #
+    # postToTwitter(sender)
+    # postToFacebook(sender)
     #
     def postToTwitter(sender)
       if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)
