@@ -35,8 +35,8 @@ And then execute:
 
 When you want to display the sharing dialogs just use: 
 
-    postToTwitter(sender)
-    postToFacebook(sender)
+    post_to_twitter
+    post_to_facebook
 
 ![twitter](https://raw.github.com/ivanacostarubio/motion-social/master/resources/twitter.png) ![facebook](https://raw.github.com/ivanacostarubio/motion-social/master/resources/facebook.png)
 

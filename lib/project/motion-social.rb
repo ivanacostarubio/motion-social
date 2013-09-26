@@ -18,7 +18,7 @@ module MotionSocial
     #
     # display_share_dialog
     #
-    def postToTwitter(sender)
+    def post_to_twitter
       if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)
         tweetSheet = SLComposeViewController.composeViewControllerForServiceType(SLServiceTypeTwitter)
         tweetSheet.setInitialText(sharing_message)
@@ -30,7 +30,7 @@ module MotionSocial
       end
     end
 
-    def postToFacebook(sender)
+    def post_to_facebook
       if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)
         sheet = SLComposeViewController.composeViewControllerForServiceType(SLServiceTypeFacebook)
         sheet.setInitialText(sharing_message)
