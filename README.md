@@ -1,10 +1,6 @@
 # motion-social
 
-This gem allows you to easily share content on Twitter and Facebook. One image is worth a thousand words. Let's have 3: 
-
-![share dialog](https://raw.github.com/ivanacostarubio/motion-social/master/resources/share_dialog.png)
-
-![twitter](https://raw.github.com/ivanacostarubio/motion-social/master/resources/twitter.png) ![facebook](https://raw.github.com/ivanacostarubio/motion-social/master/resources/facebook.png)
+This gem allows you to easily share content on Twitter and Facebook. One image is worth a thousand words and at the end of this readme we have 3. 
 
 ## Installation
 
@@ -42,6 +38,10 @@ When you want to display the sharing dialogs just use:
     postToTwitter(sender)
     postToFacebook(sender)
 
+![twitter](https://raw.github.com/ivanacostarubio/motion-social/master/resources/twitter.png) ![facebook](https://raw.github.com/ivanacostarubio/motion-social/master/resources/facebook.png)
+
 or display a dialog with Facebook and Twitter as options:
 
     display_share_dialog
+
+![share dialog](https://raw.github.com/ivanacostarubio/motion-social/master/resources/share_dialog.png)
