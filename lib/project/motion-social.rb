@@ -44,5 +44,24 @@ module MotionSocial
         delegate:nil, cancelButtonTitle:"OK", otherButtonTitles:nil)
       message.show
     end
+
+    def display_share_dialog(sender=nil)
+      cancelTitle = "Not now"
+      actionSheet = UIActionSheet.alloc.initWithTitle(nil,delegate:self,
+                                                      cancelButtonTitle:"Cancel",
+                                                      destructiveButtonTitle:nil,
+                                                      otherButtonTitles: nil)
+      actionSheet.addButtonWithTitle("Twitter")
+      actionSheet.addButtonWithTitle("Facebook")
+      actionSheet.showInView(self.controller.view)
+    end
+
+    def actionSheet(actionSheet, clickedButtonAtIndex:buttonIndex)
+      if buttonIndex == 2
+        postToFacebook(nil)
+      elsif buttonIndex == 1
+        postToTwitter(nil)
+      end
+    end
   end
 end
