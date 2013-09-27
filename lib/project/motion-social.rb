@@ -50,7 +50,6 @@ module MotionSocial
     end
 
     def display_share_dialog(sender=nil)
-      cancelTitle = "Not now"
       actionSheet = UIActionSheet.alloc.initWithTitle(nil,delegate:self,
                                                       cancelButtonTitle:"Cancel",
                                                       destructiveButtonTitle:nil,
