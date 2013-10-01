@@ -50,20 +50,20 @@ module MotionSocial
     end
 
     def display_share_dialog(sender=nil)
-      actionSheet = UIActionSheet.alloc.initWithTitle(nil,delegate:self,
-                                                      cancelButtonTitle:"Cancel",
-                                                      destructiveButtonTitle:nil,
-                                                      otherButtonTitles: nil)
-      actionSheet.addButtonWithTitle("Twitter")
-      actionSheet.addButtonWithTitle("Facebook")
-      actionSheet.showInView(self.controller.view)
+      action_sheet = UIActionSheet.alloc.init
+      action_sheet.delegate = self
+      action_sheet.addButtonWithTitle "Twitter"
+      action_sheet.addButtonWithTitle "Facebook"
+      action_sheet.cancelButtonIndex = action_sheet.addButtonWithTitle("Cancel")
+      action_sheet.showInView(self.controller.view)
     end
 
     def actionSheet(actionSheet, clickedButtonAtIndex:buttonIndex)
-      if buttonIndex == 2
-        postToFacebook(nil)
-      elsif buttonIndex == 1
-        postToTwitter(nil)
+      puts buttonIndex
+      if buttonIndex == 1
+        post_to_facebook
+      elsif buttonIndex == 0
+        post_to_twitter
       end
     end
   end
