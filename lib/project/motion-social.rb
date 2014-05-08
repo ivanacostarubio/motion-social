@@ -24,6 +24,7 @@ module MotionSocial
         tweetSheet.setInitialText(sharing_message)
         url = NSURL.alloc.initWithString(sharing_url)
         tweetSheet.addURL(url)
+        tweetSheet.addImage(sharing_image)
         controller.presentViewController(tweetSheet,animated:true, completion:nil)
       else
         error_message_for("Twitter")
@@ -36,6 +37,7 @@ module MotionSocial
         sheet.setInitialText(sharing_message)
         url = NSURL.alloc.initWithString(sharing_url)
         sheet.addURL(url)
+        sheet.addImage(sharing_image)
         controller.presentViewController(sheet,animated:true,completion:nil)        
       else
         error_message_for("Facebook")

@@ -27,6 +27,10 @@ And then execute:
         "http://www.rubymotion.com"
       end
 
+      def sharing_image
+        nil
+      end
+
       def controller
         self # This is so that we can present the dialogs. 
       end
