@@ -49,3 +49,8 @@ or display a dialog with Facebook and Twitter as options:
     display_share_dialog
 
 ![share dialog](https://raw.github.com/ivanacostarubio/motion-social/master/resources/share_dialog.png)
+
+## Contributors:
+
+- Ivan Acosta-Rubio
+- Shigeaki Matsumura
