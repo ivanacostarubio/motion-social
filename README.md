@@ -11,6 +11,11 @@ Add this line to your application's Gemfile:
 And then execute:
 
     $ bundle
+    
+    
+Don't forget to add the Frameoworks to your Rakefile
+
+    app.frameworks += ["Social", "Accounts"]
 
 
 ## Usage:
